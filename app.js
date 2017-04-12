@@ -31,7 +31,18 @@ const bot = new TelegramBot(TOKEN, options);
 bot.setWebHook(`${url}/bot${TOKEN}`);
 
 
+var phrases = [
+  "Gianroberto non pensava che fosse importante parlare, e infatti parlava il meno possibile",
+  "Pensare all’oggi è un atto più rivoluzionario di quel che si possa credere. In quell’oggi pensavo a quella birra ghiacciata perché ne avevo una gran voglia e poi pensavo al fatto che mai e poi mai avrei immaginato di finire sull’unica imbarcazione che naviga sul Rio Napo a caricare maiali e quintali di banane."
+];
 // Just to ping!
 bot.on('message', function onMessage(msg) {
-  bot.sendMessage(msg.chat.id, 'I am alive on Heroku!');
+  bot.sendMessage(msg.chat.id, phrases[getRandomIntInclusive(0, phrases.length - 1)]);
 });
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
