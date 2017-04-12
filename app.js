@@ -3,7 +3,7 @@ const token = 't278945464:AAFi4blEbA48qw44qP_Ixrzl3qvcIsJbDok';
 
 const options = {
   webHook: {
-    port: 443,
+    port: 80,
     key: `./40413500-dibba-bot.herokuapp.com.key`,  // Path to file with PEM private key
     cert: `./40413500-dibba-bot.herokuapp.com.cert`  // Path to file with PEM certificate
   }
