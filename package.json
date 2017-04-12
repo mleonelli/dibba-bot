@@ -23,6 +23,5 @@
   "homepage": "https://github.com/mleonelli/dibba-bot#readme",
   "dependencies": {
     "express": "^4.15.2"
-    
   }
 }

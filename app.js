@@ -1,5 +1,5 @@
 //var TelegramBot = require('node-telegram-bot-api');
-var express = require(express)
+var express = require('express');
 const token = 't278945464:AAFi4blEbA48qw44qP_Ixrzl3qvcIsJbDok';
 
 const options = {
@@ -29,3 +29,7 @@ var app = express();
 app.get('/', function(req, res){
   res.send('Hello!');
 });
+
+app.listen(4000, function () {
+  console.log('Example app listening on port 3000!')
+})
