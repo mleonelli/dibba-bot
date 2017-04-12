@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/mleonelli/dibba-bot#readme",
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.15.2"
     //"node-telegram-bot-api": "^0.27.0",
     //"request": "^2.81.0"
   }
