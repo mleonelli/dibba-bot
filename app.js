@@ -11,12 +11,12 @@ const options = {
 };
 // This URL must route to the port set above (i.e. 443)
 const url = 'https://dibba-bot.herokuapp.com/';
-const bot = new TelegramBot(token, options);
+const bot = new TelegramBot(token);
 
 // This informs the Telegram servers of the new webhook.
-bot.setWebHook(`${url}/bot${token}`, {
-  certificate: options.webHook.cert,
-});
+//bot.setWebHook(`${url}/bot${token}`, {
+//  certificate: options.webHook.cert,
+//});
 
 
 // Just to ping!
